@@ -12,65 +12,69 @@
     <link rel="stylesheet" href="./static/styles/core.css" />
     <script
       lang="javascript"
+      src="./static/scripts/core.js"
+    ></script>
+    <script
+      lang="javascript"
       defer
-      src="./static/scripts/navigation-menu.js"
+      src="./static/scripts/menu.js"
     ></script>
   </head>
   <body>
     <header>
-      <nav class="navigation-menu">
-        <ul class="navigation-menu__parent-node-container">
-          <li class="navigation-menu__parent-node"
+      <nav class="menu">
+        <ul class="menu__parent-container">
+          <li class="menu__parent"
             onclick="parentNodeSelected(this)">
-            <a class="navigation-menu__item" href="#">KINDER GARDEN</a>
-            <ul class="navigation-menu__child-node-container">
-              <li class="navigation-menu__child-node"
+            <a class="menu__item" href="#">KINDER GARDEN</a>
+            <ul class="menu__child-container">
+              <li class="menu__child"
                 onclick="submenuNodeSelected(this)">
-                <a class="navigation-menu__item" href="#">GROUP 0</a>
+                <a class="menu__item" href="#">GROUP 0</a>
               </li>
-              <li class="navigation-menu__child-node"
+              <li class="menu__child"
                 onclick="submenuNodeSelected(this)">              
-                <a class="navigation-menu__item" href="#">GROUP 1</a>
+                <a class="menu__item" href="#">GROUP 1</a>
               </li>
-              <li class="navigation-menu__child-node"
+              <li class="menu__child"
                 onclick="submenuNodeSelected(this)">              
-                <a class="navigation-menu__item" href="#">GROUP 2</a>
+                <a class="menu__item" href="#">GROUP 2</a>
               </li>
             </ul>
           </li> 
-          <li class="navigation-menu__parent-node"
+          <li class="menu__parent"
             onclick="parentNodeSelected(this)">
-            <a class="navigation-menu__item" href="#">PRIMARY</a>
-            <ul class="navigation-menu__child-node-container">
-              <li class="navigation-menu__child-node"
+            <a class="menu__item" href="#">PRIMARY</a>
+            <ul class="menu__child-container">
+              <li class="menu__child"
                 onclick="submenuNodeSelected(this)">
-                <a class="navigation-menu__item" href="#">GROUP 3</a>
+                <a class="menu__item" href="#">GROUP 3</a>
               </li>
-              <li class="navigation-menu__child-node"
+              <li class="menu__child"
                 onclick="submenuNodeSelected(this)">
-                <a class="navigation-menu__item" href="#">GROUP 4</a>
+                <a class="menu__item" href="#">GROUP 4</a>
               </li>
-              <li class="navigation-menu__child-node"
+              <li class="menu__child"
                 onclick="submenuNodeSelected(this)">
-                <a class="navigation-menu__item" href="#">GROUP 5</a>
+                <a class="menu__item" href="#">GROUP 5</a>
               </li>
             </ul>
           </li>
-          <li class="navigation-menu__parent-node"
+          <li class="menu__parent"
             onclick="parentNodeSelected(this)">
-            <a class="navigation-menu__item" href="#">SECONDARY</a>
-            <ul class="navigation-menu__child-node-container">
-              <li class="navigation-menu__child-node"
+            <a class="menu__item" href="#">SECONDARY</a>
+            <ul class="menu__child-container">
+              <li class="menu__child"
                 onclick="submenuNodeSelected(this)">
-                <a class="navigation-menu__item" href="#">GROUP 6</a>
+                <a class="menu__item" href="#">GROUP 6</a>
               </li>
-              <li class="navigation-menu__child-node"
+              <li class="menu__child"
                 onclick="submenuNodeSelected(this)">
-                <a class="navigation-menu__item" href="#">GROUP 7</a>
+                <a class="menu__item" href="#">GROUP 7</a>
               </li>
-              <li class="navigation-menu__child-node"
+              <li class="menu__child"
                 onclick="submenuNodeSelected(this)">
-                <a class="navigation-menu__item" href="#">GROUP 8</a>
+                <a class="menu__item" href="#">GROUP 8</a>
               </li>
             </ul>
           </li>          
@@ -82,7 +86,7 @@
       <button class="m-1 p-1" onclick="addMoreContent()"> Add More Content to test Sticky footer </button onclick="addMoreContent()">
     </main>
     <footer class="mt-1">
-      <span> About | Sticky | Footer </span>
+      <span> About Sticky Footer </span>
     </footer>
   </body>
 </html>

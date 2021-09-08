@@ -37,6 +37,14 @@ body {
   margin-bottom: 1em;
 }
 
+/* global theme */
+
+:root {
+  --primary-color: #2196f3;
+  --secondary-color: #ffffff;
+  --accent-color: #0069c0;
+}
+
 /* animations  */
 @keyframes growOut {
   0% {
@@ -51,32 +59,32 @@ body {
 }
 
 /* Naviagtion Menu */
-.navigation-menu {
+.menu {
   width: 100%;
 }
 
-.navigation-menu ul {
+.menu ul {
   list-style-type: none;
 }
 
-.navigation-menu__parent-node-container {
+.menu__parent-container {
   display: flex;
 }
 
-.navigation-menu__item {
+.menu__item {
   padding: 1em;
-  background-color: mediumorchid;
-  border: 1px solid mediumpurple;
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
   display: block;
   color: white;
   text-decoration: none;
 }
 
-.navigation-menu__item:hover, .navigation-menu__item:active {
-  background-color: blueviolet;
+.menu__item:hover, .menu__item:active {
+  background-color: var(--accent-color);
 }
 
-.navigation-menu__child-node-container {
+.menu__child-container {
   display: none;
   position: absolute;
 
@@ -88,7 +96,7 @@ body {
 footer {
   grid-row-start: 3;
   grid-row-end: 4;
-  background: mediumvioletred;
+  background: var(--primary-color);
   padding: 1em;
-  color: whitesmoke;
+  color: var(--secondary-color);
 }
